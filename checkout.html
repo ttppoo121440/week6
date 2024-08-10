@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="zh-hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>week6</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Serif+TC:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noto+Serif+TC:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <script type="module" crossorigin src="/week6/assets/main-SwwzvfPB.js"></script>
+    <link rel="stylesheet" crossorigin href="/week6/assets/main-DmT13ItR.css">
+  </head>
+  <style></style>
+
+  <body class="bg-[#FFFDF5] leading-normal">
+    <nav class="container px-3 xl:px-0">
+  <div class="flex items-center">
+    <div class="mr-auto flex items-center">
+      <a href="/week6/index.html">
+        <h1
+          class="mr-9 py-5 text-base leading-5 md:text-[28px] md:font-normal md:leading-7"
+        >
+          Vivre
+        </h1>
+      </a>
+      <div class="relative hidden lg:block">
+        <input
+          type="text"
+          placeholder="搜尋文章"
+          class="h-12 w-[276px] rounded-full border border-[#DEE2E6] py-3 pl-5 pr-10"
+        />
+        <span
+          class="material-symbols-outlined absolute right-3 top-1/4 text-primary"
+        >
+          search
+        </span>
+      </div>
+    </div>
+
+    <ul class="flex items-center md:py-9">
+      <li class="menu-item">
+        <a href="/week6/all-article.html" class="px-5 py-2">所有文章</a>
+      </li>
+      <li class="menu-item ml-5">
+        <a href="/week6/subscription.html" class="px-5 py-2">訂閱方案</a>
+      </li>
+      <li class="menu-item ml-5">
+        <a href="/week6/about.html" class="px-5 py-2">關於我們</a>
+      </li>
+      <li class="menu-item ml-5">
+        <a
+          href="/week6/register.html"
+          class="flex h-[52px] w-[137px] items-center justify-center rounded-full bg-primary leading-[19.2px] text-white hover:bg-primary-dark"
+          >登入/註冊</a
+        >
+      </li>
+      <li class="flex items-center md:hidden">
+        <button id="hamburger" class="mobile-menu-button p-3 outline-none">
+          <svg
+            class="h-6 w-6 text-gray-500 hover:text-gray-900"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </li>
+    </ul>
+  </div>
+  <div class="mobile-menu md:hidden">
+    <ul class="pb-10">
+      <li class="pb-6">
+        <div class="relative">
+          <input
+            type="text"
+            placeholder="搜尋文章"
+            class="h-12 w-full rounded-full border border-[#DEE2E6] py-3 pl-5 pr-10"
+          />
+          <span
+            class="material-symbols-outlined absolute right-3 top-1/4 text-primary"
+          >
+            search
+          </span>
+        </div>
+      </li>
+      <li class="pb-6">
+        <a
+          href="/week6/all-article.html"
+          class="block rounded-md px-3 py-2 text-base font-medium hover:bg-primary hover:text-white"
+          >所有文章</a
+        >
+      </li>
+      <li class="pb-6">
+        <a
+          href="/week6/subscription.html"
+          class="block rounded-md px-3 py-2 text-base font-medium hover:bg-primary hover:text-white"
+          >訂閱方案</a
+        >
+      </li>
+      <li>
+        <a
+          href="/week6/about.html"
+          class="block rounded-md px-3 py-2 text-base font-medium hover:bg-primary hover:text-white"
+          >關於我們</a
+        >
+      </li>
+    </ul>
+    <div class="pb-6">
+      <a
+        href="/week6/register.html"
+        class="flex h-[44px] w-full items-center justify-center rounded-full bg-primary text-white hover:bg-primary-dark"
+        >登入/註冊</a
+      >
+    </div>
+  </div>
+</nav>
+
+
+    <section class="container border-t px-3 pt-4 md:pb-[100px] md:pt-[69px]">
+      <ul class="flex items-center pb-2 xl:pb-5 xl:pt-0">
+        <li class="mr-2">
+          <a
+            href="/week6/index.html"
+            class="block py-3 text-sm leading-7 tracking-wider text-[#6C757D]"
+            >首頁</a
+          >
+        </li>
+        <li class="mr-2 py-3">/</li>
+        <li class="mr-2">
+          <a
+            href="/week6/subscription.html"
+            class="block py-3 text-sm leading-7 tracking-wider text-[#6C757D]"
+            >訂閱方案</a
+          >
+        </li>
+        <li class="mr-2 py-3">/</li>
+        <li>
+          <a
+            href="/week6/subscription.html"
+            class="block py-3 text-sm leading-7 tracking-wider text-primary"
+            >付款</a
+          >
+        </li>
+      </ul>
+      <h2
+        class="pb-10 text-[28px] leading-[33.6px] md:pb-[60px] md:text-[40px] md:leading-[48px]"
+      >
+        付款
+      </h2>
+      <form class="lg:grid lg:grid-cols-12 lg:gap-6">
+        <div class="lg:col-span-7">
+          <div class="mb-6 rounded-xl border bg-white p-6 md:mx-auto md:p-10">
+            <h5 class="pb-6 text-xl font-black leading-6 md:pb-10">購買人</h5>
+            <div class="pb-4">
+              <label for="name" class="block pb-3 leading-[19.2px] md:pb-3"
+                >姓名</label
+              >
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="請輸入姓名"
+                class="w-full bg-[#F8F9FA] px-4 py-3 leading-6 tracking-wider"
+              />
+            </div>
+            <div class="pb-4">
+              <label for="password" class="block pb-3 leading-[19.2px] md:pb-3"
+                >密碼</label
+              >
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="請輸入密碼"
+                class="w-full bg-[#F8F9FA] px-4 py-3 leading-6 tracking-wider"
+              />
+            </div>
+            <div class="pb-6 md:pb-10">
+              <label for="email" class="block pb-3 leading-[19.2px] md:pb-3"
+                >電子信箱</label
+              >
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="請輸入電子信箱"
+                class="w-full bg-[#F8F9FA] px-4 py-3 leading-6 tracking-wider"
+              />
+            </div>
+            <div class="flex items-center">
+              <input
+                type="checkbox"
+                name="info"
+                id="info"
+                class="mr-2 h-4 w-4"
+              />
+              <label for="info">記住我的資訊</label>
+            </div>
+          </div>
+
+          <div
+            class="mb-6 rounded-xl border bg-white p-6 md:mx-auto md:mb-0 md:p-10"
+          >
+            <h5 class="pb-6 text-xl font-black leading-6 md:pb-10">付款方式</h5>
+            <span class="block pb-1 font-newsreader font-bold leading-[19.2px]"
+              >Pay With</span
+            >
+            <div class="pb-6">
+              <input
+                type="radio"
+                name="radio"
+                id="radio"
+                checked
+                class="h-4 w-4"
+              />
+              <label for="radio">信用卡</label>
+            </div>
+            <div class="pb-4">
+              <label
+                for="card-number"
+                class="block pb-3 leading-[19.2px] md:pb-3"
+                >信用卡號碼</label
+              >
+              <input
+                type="text"
+                name="card-number"
+                id="card-number"
+                placeholder="1234 5678 1234 5678"
+                class="w-full bg-[#F8F9FA] px-4 py-3 leading-6 tracking-wider"
+              />
+            </div>
+            <div class="flex pb-6">
+              <div class="mr-6 w-1/2">
+                <label for="date" class="block pb-3 leading-[19.2px] md:pb-3"
+                  >過期日</label
+                >
+                <input
+                  type="text"
+                  name="date"
+                  id="date"
+                  placeholder="ＭＭ/YY"
+                  class="w-full bg-[#F8F9FA] px-4 py-3 leading-6 tracking-wider"
+                />
+              </div>
+              <div class="w-1/2">
+                <label for="cvv" class="block pb-3 leading-[19.2px] md:pb-3"
+                  >認證碼</label
+                >
+                <input
+                  type="text"
+                  name="cvv"
+                  id="cvv"
+                  placeholder="CVV"
+                  class="w-full bg-[#F8F9FA] px-4 py-3 leading-6 tracking-wider"
+                />
+              </div>
+            </div>
+            <div class="pb-6 md:pb-10">
+              <div class="flex items-center">
+                <input
+                  type="checkbox"
+                  name="card"
+                  id="card"
+                  class="mr-2 h-4 w-4"
+                />
+                <label for="card">記住我的資訊</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="lg:col-span-5">
+          <div
+            class="rounded-xl border border-primary bg-white p-6 md:mx-auto md:p-10"
+          >
+            <h5
+              class="border-b pb-6 text-xl font-black leading-6 text-primary md:pb-10"
+            >
+              訂單資訊
+            </h5>
+            <div class="flex pt-6">
+              <h6 class="mr-auto leading-[19.2px]">輕量型方案</h6>
+              <span class="font-newsreader font-bold leading-[19.2px]"
+                >NT 1,188</span
+              >
+            </div>
+            <div class="border-b pb-6 pt-3">
+              <h6 class="leading-[19.2px] text-[#A1A1AA]">年繳</h6>
+            </div>
+            <div class="flex border-b pb-6 pt-6">
+              <div class="w-full">
+                <label
+                  for="code"
+                  class="mr-auto block pb-3 leading-[19.2px] text-[#52525B]"
+                  >折扣碼</label
+                >
+                <div class="flex">
+                  <input
+                    type="text"
+                    name="code"
+                    id="code"
+                    placeholder="請輸入折扣碼"
+                    class="mr-3 flex-grow bg-[#F8F9FA] px-4 py-3"
+                  />
+                  <button
+                    type="button"
+                    class="block h-11 w-[66px] rounded-full bg-[#F8F9FA] text-[#6C757D]"
+                  >
+                    套用
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="border-b pb-6">
+              <div class="flex pt-6">
+                <h6 class="mr-auto leading-[19.2px] text-[#52525B]">小計</h6>
+                <span class="font-newsreader font-bold leading-[19.2px]"
+                  >NT 1,188</span
+                >
+              </div>
+              <div class="flex pt-6">
+                <h6 class="mr-auto leading-[19.2px] text-[#52525B]">折扣</h6>
+                <span class="font-newsreader font-bold leading-[19.2px]"
+                  >0</span
+                >
+              </div>
+            </div>
+            <div class="flex pt-6">
+              <h6 class="mr-auto leading-[19.2px] text-[#52525B]">總計</h6>
+              <span class="font-newsreader text-2xl font-bold leading-[28.8px]"
+                >NT 1,188</span
+              >
+            </div>
+            <div class="pt-6">
+              <a
+                href="/week6/payment-info.html"
+                class="flex h-[44px] w-full items-center justify-center rounded-full bg-primary text-white hover:bg-primary-dark"
+              >
+                立即付款
+                <span class="material-symbols-outlined pl-3">
+                  trending_flat
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <footer class="border-t text-center xl:container">
+  <p
+    class="py-5 text-sm leading-[21px] text-[#6E6B67] xl:text-base xl:leading-6 xl:tracking-wider"
+  >
+    ©Vivre 2024 All right Reserved
+  </p>
+</footer>
+
+
+  </body>
+</html>

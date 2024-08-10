@@ -1,0 +1,875 @@
+<!doctype html>
+<html lang="zh-hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>week6</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Serif+TC:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noto+Serif+TC:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <script type="module" crossorigin src="/week6/assets/main-SwwzvfPB.js"></script>
+    <link rel="stylesheet" crossorigin href="/week6/assets/main-DmT13ItR.css">
+  </head>
+
+  <body class="bg-[#FFFDF5] leading-normal">
+    <nav class="container px-3 xl:px-0">
+  <div class="flex items-center">
+    <div class="mr-auto flex items-center">
+      <a href="/week6/index.html">
+        <h1
+          class="mr-9 py-5 text-base leading-5 md:text-[28px] md:font-normal md:leading-7"
+        >
+          Vivre
+        </h1>
+      </a>
+      <div class="relative hidden lg:block">
+        <input
+          type="text"
+          placeholder="搜尋文章"
+          class="h-12 w-[276px] rounded-full border border-[#DEE2E6] py-3 pl-5 pr-10"
+        />
+        <span
+          class="material-symbols-outlined absolute right-3 top-1/4 text-primary"
+        >
+          search
+        </span>
+      </div>
+    </div>
+
+    <ul class="flex items-center md:py-9">
+      <li class="menu-item">
+        <a href="/week6/all-article.html" class="px-5 py-2">所有文章</a>
+      </li>
+      <li class="menu-item ml-5">
+        <a href="/week6/subscription.html" class="px-5 py-2">訂閱方案</a>
+      </li>
+      <li class="menu-item ml-5">
+        <a href="/week6/about.html" class="px-5 py-2">關於我們</a>
+      </li>
+      <li class="menu-item ml-5">
+        <a
+          href="/week6/register.html"
+          class="flex h-[52px] w-[137px] items-center justify-center rounded-full bg-primary leading-[19.2px] text-white hover:bg-primary-dark"
+          >登入/註冊</a
+        >
+      </li>
+      <li class="flex items-center md:hidden">
+        <button id="hamburger" class="mobile-menu-button p-3 outline-none">
+          <svg
+            class="h-6 w-6 text-gray-500 hover:text-gray-900"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </li>
+    </ul>
+  </div>
+  <div class="mobile-menu md:hidden">
+    <ul class="pb-10">
+      <li class="pb-6">
+        <div class="relative">
+          <input
+            type="text"
+            placeholder="搜尋文章"
+            class="h-12 w-full rounded-full border border-[#DEE2E6] py-3 pl-5 pr-10"
+          />
+          <span
+            class="material-symbols-outlined absolute right-3 top-1/4 text-primary"
+          >
+            search
+          </span>
+        </div>
+      </li>
+      <li class="pb-6">
+        <a
+          href="/week6/all-article.html"
+          class="block rounded-md px-3 py-2 text-base font-medium hover:bg-primary hover:text-white"
+          >所有文章</a
+        >
+      </li>
+      <li class="pb-6">
+        <a
+          href="/week6/subscription.html"
+          class="block rounded-md px-3 py-2 text-base font-medium hover:bg-primary hover:text-white"
+          >訂閱方案</a
+        >
+      </li>
+      <li>
+        <a
+          href="/week6/about.html"
+          class="block rounded-md px-3 py-2 text-base font-medium hover:bg-primary hover:text-white"
+          >關於我們</a
+        >
+      </li>
+    </ul>
+    <div class="pb-6">
+      <a
+        href="/week6/register.html"
+        class="flex h-[44px] w-full items-center justify-center rounded-full bg-primary text-white hover:bg-primary-dark"
+        >登入/註冊</a
+      >
+    </div>
+  </div>
+</nav>
+
+
+    <section class="md:container md:h-[621px] md:border-t md:py-20">
+      <div
+        class="flex h-[551px] flex-col items-center justify-end bg-banner-sm bg-cover bg-center pb-12 text-white md:items-start md:justify-center md:bg-banner md:pl-[61px]"
+      >
+        <h5 class="pb-2 md:font-black md:leading-6">獻給新世代的生活風格誌</h5>
+        <h2
+          class="pb-5 text-[28px] font-black md:text-[40px] md:leading-[48px]"
+        >
+          一起探索生活的無限可能
+        </h2>
+        <a href="/week6/subscription.html" class="btn h-[44px] w-[141px]"
+          >馬上訂閱<span class="material-symbols-outlined pl-3">
+            trending_flat
+          </span></a
+        >
+      </div>
+    </section>
+
+    <section class="container px-3 py-12 xl:px-0">
+      <h2 class="text-2xl leading-[28.8px]">熱門主題</h2>
+      <ul
+        class="grid pt-5 sm:grid-cols-2 sm:gap-6 md:grid-cols-3 xl:grid-cols-4"
+      >
+        <li class="hot-subject-item">
+          <a href="#" class="block">
+            <img
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-1-sm.png?raw=true"
+              alt="hot"
+              class="w-full rounded-br-[20px] rounded-tl-[20px] sm:hidden sm:h-[200px]"
+            />
+            <img
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-1.png?raw=true"
+              alt="hot"
+              class="hidden w-full rounded-br-[20px] rounded-tl-[20px] sm:block sm:h-[200px]"
+            />
+            <h6
+              class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform text-white"
+            >
+              城市漫遊者
+            </h6></a
+          >
+        </li>
+        <li class="hot-subject-item">
+          <a href="#" class="block">
+            <img
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-3-sm.png?raw=true"
+              alt="hot"
+              class="w-full rounded-br-[20px] rounded-tl-[20px] sm:hidden sm:h-[200px]"
+            />
+            <img
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-3.png?raw=true"
+              alt="hot"
+              class="hidden w-full rounded-br-[20px] rounded-tl-[20px] sm:block sm:h-[200px]"
+            />
+            <h6
+              class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform text-white"
+            >
+              秘境尋蹤人
+            </h6></a
+          >
+        </li>
+        <li class="hot-subject-item">
+          <a href="#" class="block">
+            <img
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-5-sm.png?raw=true"
+              alt="hot"
+              class="w-full rounded-br-[20px] rounded-tl-[20px] sm:hidden sm:h-[200px]"
+            />
+            <img
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-5.png?raw=true"
+              alt="hot"
+              class="hidden w-full rounded-br-[20px] rounded-tl-[20px] sm:block sm:h-[200px]"
+            />
+            <h6
+              class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform text-white"
+            >
+              品味設計家
+            </h6></a
+          >
+        </li>
+        <li class="hot-subject-item">
+          <a href="#" class="block">
+            <img
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-8-sm.png?raw=true"
+              alt="hot"
+              class="w-full rounded-br-[20px] rounded-tl-[20px] sm:hidden sm:h-[200px]"
+            />
+            <img
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-8.png?raw=true"
+              alt="hot"
+              class="hidden w-full rounded-br-[20px] rounded-tl-[20px] sm:block sm:h-[200px]"
+            />
+            <h6
+              class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform text-white"
+            >
+              美食探險記
+            </h6></a
+          >
+        </li>
+        <li class="hot-subject-item">
+          <a href="#" class="block">
+            <img
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-2-sm.png?raw=true"
+              alt="hot"
+              class="w-full rounded-br-[20px] rounded-tl-[20px] sm:hidden sm:h-[200px]"
+            />
+            <img
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-2.png?raw=true"
+              alt="hot"
+              class="hidden w-full rounded-br-[20px] rounded-tl-[20px] sm:block sm:h-[200px]"
+            />
+            <h6
+              class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform text-white"
+            >
+              美學建築誌
+            </h6></a
+          >
+        </li>
+        <li class="hot-subject-item">
+          <a href="#" class="block">
+            <img
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-4-sm.png?raw=true"
+              alt="hot"
+              class="w-full rounded-br-[20px] rounded-tl-[20px] sm:hidden sm:h-[200px]"
+            />
+            <img
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-4.png?raw=true"
+              alt="hot"
+              class="hidden w-full rounded-br-[20px] rounded-tl-[20px] sm:block sm:h-[200px]"
+            />
+            <h6
+              class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform text-white"
+            >
+              慢活生活行
+            </h6></a
+          >
+        </li>
+        <li class="hot-subject-item">
+          <a href="#" class="block">
+            <img
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-6-sm.png?raw=true"
+              alt="hot"
+              class="w-full rounded-br-[20px] rounded-tl-[20px] sm:hidden sm:h-[200px]"
+            />
+            <img
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-6.png?raw=true"
+              alt="hot"
+              class="hidden w-full rounded-br-[20px] rounded-tl-[20px] sm:block sm:h-[200px]"
+            />
+            <h6
+              class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform text-white"
+            >
+              工藝匠心賞
+            </h6></a
+          >
+        </li>
+        <li class="hot-subject-item">
+          <a href="#" class="block">
+            <img
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-7-sm.png?raw=true"
+              alt="hot"
+              class="w-full rounded-br-[20px] rounded-tl-[20px] sm:hidden sm:h-[200px]"
+            />
+            <img
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-7.png?raw=true"
+              alt="hot"
+              class="hidden w-full rounded-br-[20px] rounded-tl-[20px] sm:block sm:h-[200px]"
+            />
+            <h6
+              class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform text-white"
+            >
+              時尚先鋒派
+            </h6></a
+          >
+        </li>
+      </ul>
+    </section>
+    <section class="container px-3 py-12 xl:px-0">
+      <div class="xl:grid xl:grid-cols-12 xl:gap-6">
+        <div class="col-span-8 xl:order-2">
+          <h2 class="block pb-6 xl:hidden">精選文章</h2>
+          <div class="carousel">
+            <ul class="carousel-items pb-10 xl:grid xl:grid-cols-2 xl:gap-6">
+              <li class="carousel-item pb-4">
+                <div class="border-b border-black">
+                  <img
+                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/articles-1-sm.png?raw=true"
+                    alt="articles"
+                    class="hover-effect w-full pb-6 md:hidden"
+                  />
+                  <img
+                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/articles-1.png?raw=true"
+                    alt="articles"
+                    class="hover-effect hidden w-full pb-6 md:block xl:h-[192px]"
+                  />
+                  <h3 class="pb-2 text-xl leading-6">私人島嶼的露營奇遇記</h3>
+                  <p class="pb-6 font-semibold tracking-wider text-[#6C757D]">
+                    遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧..
+                  </p>
+                  <a
+                    href="#"
+                    class="flex pb-6 font-newsreader text-xl font-semibold leading-6 text-primary hover:text-primary-dark"
+                    >Read More</a
+                  >
+                </div>
+              </li>
+              <li class="carousel-item pb-4 xl:block">
+                <div class="border-b border-black">
+                  <img
+                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/articles-2-sm.png?raw=true"
+                    alt="articles"
+                    class="hover-effect w-full pb-6 md:hidden"
+                  />
+                  <img
+                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/articles-2.png?raw=true"
+                    alt="articles"
+                    class="hover-effect hidden w-full pb-6 md:block xl:h-[192px]"
+                  />
+                  <h3 class="pb-2 text-xl leading-6">私人島嶼的露營奇遇記</h3>
+                  <p class="pb-6 font-semibold tracking-wider text-[#6C757D]">
+                    遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧..
+                  </p>
+                  <a
+                    href="#"
+                    class="flex pb-6 font-newsreader text-xl font-semibold leading-6 text-primary hover:text-primary-dark"
+                    >Read More</a
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-span-4 xl:order-1">
+          <h2 class="hidden xl:block">精選文章</h2>
+          <div class="flex items-center pb-20 xl:h-full xl:flex-col">
+            <span class="mr-auto leading-7 xl:mt-auto"
+              >1 <span class="text-[#ADB5BD]">/</span> 5</span
+            >
+            <div class="flex items-center text-[#6C757D] xl:mr-auto xl:pt-8">
+              <a href="javascript:void(0);" class="prev hover-effect block"
+                ><span class="material-symbols-outlined arrow-btn">
+                  west
+                </span></a
+              >
+              <div class="mx-5 w-20 flex-1 border-t border-black"></div>
+              <a href="javascript:void(0);" class="next hover-effect block"
+                ><span class="material-symbols-outlined arrow-btn">
+                  east
+                </span></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-[#FFFBE5]">
+      <div class="container relative h-full w-full overflow-hidden">
+        <div class="mx-auto w-[269px] py-12 xl:w-[359px] xl:py-20">
+          <h6
+            class="pb-3 text-center text-primary xl:pb-5 xl:text-2xl xl:font-black xl:leading-[28.8px] xl:text-[#6E6B67]"
+          >
+            \ 母親節強檔活動 /
+          </h6>
+          <h2
+            class="pb-6 text-center text-2xl leading-[28.8px] tracking-wider xl:pb-5 xl:text-[32px] xl:leading-[38.4px]"
+          >
+            家庭訂閱方案限時 7 折
+          </h2>
+          <ul class="px-[7.5px] pb-6 text-[#6C757D] xl:pb-10 xl:pl-[53px]">
+            <li class="pb-4">
+              <div class="flex">
+                <span class="material-symbols-outlined pr-3"> check </span>
+                每月最新文章無限閱讀
+              </div>
+            </li>
+            <li class="pb-4">
+              <div class="flex">
+                <span class="material-symbols-outlined pr-3"> check </span>
+                專屬會員限定內容
+              </div>
+            </li>
+            <li class="pb-4">
+              <div class="flex">
+                <span class="material-symbols-outlined pr-3"> check </span>
+                定期電子報
+              </div>
+            </li>
+            <li class="pb-4">
+              <div class="flex">
+                <span class="material-symbols-outlined pr-3"> check </span>
+                年度精選禮物
+              </div>
+            </li>
+            <li class="pb-4">
+              <div class="flex">
+                <span class="material-symbols-outlined pr-3"> check </span>
+                24 /7 優先客戶服務
+              </div>
+            </li>
+            <li>
+              <div class="flex">
+                <span class="material-symbols-outlined pr-3"> check </span>
+                為每個成員量身打造專屬行程
+              </div>
+            </li>
+          </ul>
+          <div class="flex justify-center">
+            <a
+              href="/week6/subscription.html"
+              class="btn h-[44px] w-[109px] xl:h-14 xl:w-[134px] xl:text-xl xl:leading-6"
+              >我想了解</a
+            >
+          </div>
+        </div>
+        <img
+          src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/bg-1.png?raw=true"
+          alt=""
+          class="absolute bottom-0 left-2 hidden md:block"
+        />
+        <img
+          src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/bg-2-sm.png?raw=true"
+          alt=""
+          class="absolute bottom-0 right-[-48px] xl:hidden"
+        />
+        <img
+          src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/bg-2.png?raw=true"
+          alt=""
+          class="absolute bottom-0 right-[-48px] hidden xl:block"
+        />
+      </div>
+    </section>
+
+    <section class="container px-3 py-12 xl:px-0">
+      <h2
+        class="pb-6 text-2xl leading-[28.8px] xl:pb-10 xl:text-[32px] xl:leading-[38.4px]"
+      >
+        大家都在看
+      </h2>
+      <div class="xl:grid xl:grid-cols-12 xl:gap-6">
+        <div class="xl:col-span-3">
+          <ul
+            class="hidden w-full bg-white pb-6 pl-6 pr-6 pt-6 text-xl font-black leading-6 xl:block xl:h-full"
+          >
+            <li class="pb-6">
+              <a href="#" class="home-list-item"
+                ><span class="mx-5">•</span>酒精路跑地圖</a
+              >
+            </li>
+            <li class="pb-6">
+              <a href="#" class="home-list-item"
+                ><span class="mx-5">•</span>台北拉麵圖鑑</a
+              >
+            </li>
+            <li class="pb-6">
+              <a href="#" class="home-list-item"
+                ><span class="mx-5">•</span>海島自由行</a
+              >
+            </li>
+            <li class="pb-6">
+              <a href="#" class="home-list-item"
+                ><span class="mx-5">•</span>短天數出國推薦</a
+              >
+            </li>
+            <li>
+              <a href="#" class="home-list-item"
+                ><span class="mx-5">•</span>週末露營趣</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="xl:col-span-9">
+          <ul class="bg-white xl:p-16">
+            <li>
+              <div class="bg-white p-4">
+                <h3
+                  class="pb-3 text-xl leading-6 text-primary xl:pb-6 xl:text-2xl xl:leading-[28.8px]"
+                >
+                  酒精路跑地圖
+                </h3>
+                <ul class="pb-4 xl:pb-10">
+                  <li
+                    class="pb-2 font-semibold leading-6 tracking-wider xl:pb-5 xl:font-bold xl:leading-[19.2px]"
+                  >
+                    ｜城市酒吧人氣榜,盤點當紅熱門酒吧
+                  </li>
+                  <li
+                    class="pb-2 font-semibold leading-6 tracking-wider xl:pb-5 xl:font-bold xl:leading-[19.2px]"
+                  >
+                    ｜你要的調酒師在這裡！五月全台酒...
+                  </li>
+                  <li
+                    class="font-semibold leading-6 tracking-wider xl:font-bold xl:leading-[19.2px]"
+                  >
+                    ｜台南老宅手工酒藏,尋味百年人文釀意
+                  </li>
+                </ul>
+                <ul class="xl:flex">
+                  <li class="xl:hidden">
+                    <img
+                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/hots-1-sm.png?raw=true"
+                      alt=""
+                      class="w-full"
+                    />
+                  </li>
+                  <li class="hidden pr-1 xl:block">
+                    <img
+                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/hots-1.png?raw=true"
+                      alt=""
+                      class="w-full rounded-l-[20px]"
+                    />
+                  </li>
+                  <li class="hidden pr-1 xl:block">
+                    <img
+                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/hots-2.png?raw=true"
+                      alt=""
+                      class="w-full"
+                    />
+                  </li>
+                  <li class="hidden pr-1 xl:block">
+                    <img
+                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/hots-3.png?raw=true"
+                      alt=""
+                      class="w-full"
+                    />
+                  </li>
+                  <li class="hidden pr-1 xl:block">
+                    <img
+                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/hots-4.png?raw=true"
+                      alt=""
+                      class="w-full rounded-r-[20px]"
+                    />
+                  </li>
+                </ul>
+                <div class="xl:flex xl:items-center xl:pt-12">
+                  <ul class="flex pt-6 xl:mr-auto xl:pt-0">
+                    <li class="badges mr-[10px]">#夜貓行程</li>
+                    <li class="badges mr-[10px]">#barhopping</li>
+                    <li class="badges">#全台酒吧</li>
+                  </ul>
+                  <div class="flex items-center justify-center pt-4">
+                    <a
+                      href="#"
+                      class="view-more-btn xl:w-auto xl:text-xl xl:leading-6"
+                      >View More
+                      <span class="material-symbols-outlined ml-3">
+                        east
+                      </span></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="container px-3 py-12 xl:px-0 xl:py-20">
+      <div class="flex pb-6 xl:pb-10">
+        <h2
+          class="text-2xl leading-[28.8px] xl:text-[32px] xl:leading-[38.4px]"
+        >
+          品味生活
+        </h2>
+        <div class="ml-auto hidden items-center text-[#6C757D] xl:flex">
+          <a href="#" class="hover-effect"
+            ><span class="material-symbols-outlined arrow-btn"> west </span></a
+          >
+          <div class="mx-5 w-20 flex-1 border-t border-black"></div>
+          <a href="#" class="hover-effect"
+            ><span class="material-symbols-outlined arrow-btn"> east </span></a
+          >
+        </div>
+      </div>
+      <ul class="xl:grid xl:grid-cols-3 xl:gap-6">
+        <li class="pb-6 xl:pb-0">
+          <h3
+            class="pb-6 text-[40px] font-black leading-[48px] text-[#6E6B67] xl:pb-9 xl:text-[52px] xl:leading-[74.72px]"
+          >
+            食.
+          </h3>
+          <img
+            src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/life-1-sm.png?raw=true"
+            alt=""
+            class="w-full object-cover xl:hidden"
+          />
+          <img
+            src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/life-1.png?raw=true"
+            alt=""
+            class="hidden h-[192px] w-full object-cover xl:block"
+          />
+          <ul class="pt-6 xl:pt-9">
+            <li class="pb-5">
+              <h6 class="life-item">｜米其林三星主廚的那些絕活傳奇</h6>
+            </li>
+            <li class="pb-5">
+              <h6 class="life-item">｜探秘成都的地道川味秘技與魅力</h6>
+            </li>
+            <li>
+              <h6 class="life-item">｜義大利釀酒師對於酒的堅持執著</h6>
+            </li>
+          </ul>
+          <div class="flex items-center justify-center pt-6 xl:pt-9">
+            <a href="#" class="view-more-btn"
+              >View More
+              <span class="material-symbols-outlined ml-3"> east </span></a
+            >
+          </div>
+        </li>
+        <li class="pb-6 xl:pb-0">
+          <h3
+            class="pb-6 text-[40px] font-black leading-[48px] text-[#6E6B67] xl:pb-9 xl:text-[52px] xl:leading-[74.72px]"
+          >
+            藝.
+          </h3>
+          <img
+            src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/life-2-sm.png?raw=true"
+            alt=""
+            class="w-full object-cover xl:hidden"
+          />
+          <img
+            src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/life-2.png?raw=true"
+            alt=""
+            class="hidden h-[192px] w-full object-cover xl:block"
+          />
+          <ul class="pt-6 xl:pt-9">
+            <li class="pb-5">
+              <h6 class="life-item">｜解構教主級時裝設計大師的獨...</h6>
+            </li>
+            <li class="pb-5">
+              <h6 class="life-item">｜當代攝影師鏡頭中的光影離奇</h6>
+            </li>
+            <li>
+              <h6 class="life-item">｜帶你穿縮中世紀，夏季文藝復興展</h6>
+            </li>
+          </ul>
+          <div class="flex items-center justify-center pt-6 xl:pt-9">
+            <a href="#" class="view-more-btn"
+              >View More
+              <span class="material-symbols-outlined ml-3"> east </span></a
+            >
+          </div>
+        </li>
+        <li class="pb-6 xl:pb-0">
+          <h3
+            class="pb-6 text-[40px] font-black leading-[48px] text-[#6E6B67] xl:pb-9 xl:text-[52px] xl:leading-[74.72px]"
+          >
+            旅.
+          </h3>
+          <img
+            src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/life-3-sm.png?raw=true"
+            alt=""
+            class="w-full object-cover xl:hidden"
+          />
+          <img
+            src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/life-3.png?raw=true"
+            alt=""
+            class="hidden h-[192px] w-full object-cover xl:block"
+          />
+          <ul class="pt-6 xl:pt-9">
+            <li class="pb-5">
+              <h6 class="life-item">｜遠離喧囂,偶探巴塔哥尼亞終界</h6>
+            </li>
+            <li class="pb-5">
+              <h6 class="life-item">｜東京深度六區,帶你細品極簡魅力</h6>
+            </li>
+            <li>
+              <h6 class="life-item">｜專賣奇珍異寶的東歐地下夜市</h6>
+            </li>
+          </ul>
+          <div class="flex items-center justify-center pt-6 xl:pt-9">
+            <a href="#" class="view-more-btn"
+              >View More
+              <span class="material-symbols-outlined ml-3"> east </span></a
+            >
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="bg-[#FFFBE5] pb-11 pt-12 xl:py-20">
+      <div class="container px-3 xl:px-0">
+        <div class="xl:grid xl:grid-cols-12 xl:gap-6">
+          <div
+            class="xl:col-span-6 xl:flex xl:h-full xl:flex-col xl:items-start xl:justify-center"
+          >
+            <h6 class="pb-4 text-center text-[#6C757D] xl:text-xl xl:leading-6">
+              今天又不知道要去哪裡了嗎？
+            </h6>
+            <div class="xl:flex xl:pb-9">
+              <h3
+                class="pb-2 text-center text-2xl font-bold leading-[28.8px] text-[#343A40] xl:pb-0 xl:text-[32px] xl:font-black xl:leading-[38.4px]"
+              >
+                Vivre
+              </h3>
+              <h2
+                class="pb-6 text-center text-2xl font-black leading-[28.8px] xl:pb-0 xl:text-[32px] xl:leading-[38.4px]"
+              >
+                給你意想不到生活風格提案
+              </h2>
+            </div>
+            <a
+              href="/week6/subscription.html"
+              class="btn h-[44px] w-[141px] xl:mx-0 xl:h-14 xl:w-[170px] xl:text-xl xl:leading-6"
+              >馬上訂閱<span class="material-symbols-outlined pl-3">
+                trending_flat
+              </span></a
+            >
+          </div>
+          <div class="xl:col-span-6">
+            <div class="carousel">
+              <ul
+                class="carousel-items pt-16 xl:grid xl:grid-cols-2 xl:flex-wrap xl:gap-6 xl:pt-0"
+              >
+                <li class="carousel-item xl:mt-20 xl:h-[236px] xl:w-auto">
+                  <div class="relative h-full">
+                    <div class="hot-label">
+                      <span class="material-symbols-outlined">
+                        arrow_right </span
+                      >人氣行程
+                    </div>
+                    <img
+                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/content-3-sm.png?raw=true"
+                      alt=""
+                      class="h-full w-full"
+                    />
+                    <div class="absolute bottom-4 left-3 right-3">
+                      <div class="flex items-center text-white">
+                        <h6 class="mr-auto">親子露營要帶什麼？</h6>
+                        <span class="material-symbols-outlined">
+                          trending_flat
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="carousel-item mt-4 xl:block xl:h-[236px] xl:w-auto">
+                  <div class="relative h-full">
+                    <div class="hot-label">
+                      <span class="material-symbols-outlined">
+                        arrow_right </span
+                      >編輯推薦
+                    </div>
+                    <img
+                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/content-4-sm.png?raw=true"
+                      alt=""
+                      class="h-full w-full"
+                    />
+                    <div class="absolute bottom-4 left-3 right-3">
+                      <div class="flex items-center text-white">
+                        <h6 class="mr-auto">山女孩的健行筆記</h6>
+                        <span class="material-symbols-outlined">
+                          trending_flat
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="carousel-item mt-4 xl:block xl:h-[236px] xl:w-auto">
+                  <div class="relative h-full">
+                    <div class="hot-label">
+                      <span class="material-symbols-outlined">
+                        arrow_right </span
+                      >編輯推薦
+                    </div>
+                    <img
+                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/content-2-sm.png?raw=true"
+                      alt=""
+                      class="h-full w-full"
+                    />
+                    <div class="absolute bottom-4 left-3 right-3">
+                      <div class="flex items-center text-white">
+                        <h6 class="mr-auto">質感房間改造攻略！</h6>
+                        <span class="material-symbols-outlined">
+                          trending_flat
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li
+                  class="carousel-item xl:mt-[-43px] xl:block xl:h-[236px] xl:w-auto"
+                >
+                  <div class="relative h-full">
+                    <div class="hot-label">
+                      <span class="material-symbols-outlined">
+                        arrow_right </span
+                      >熱門文章
+                    </div>
+                    <img
+                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/content-1-sm.png?raw=true"
+                      alt=""
+                      class="h-full w-full"
+                    />
+                    <div class="absolute bottom-4 left-3 right-3">
+                      <div class="flex items-center text-white">
+                        <h6 class="mr-auto">適合溜小孩的海邊景點推薦</h6>
+                        <span class="material-symbols-outlined">
+                          trending_flat
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="py-12 text-center">
+        <div class="xl:flex xl:pb-4">
+          <h2
+            class="pb-4 text-2xl leading-[28.8px] xl:mr-auto xl:pb-0 xl:text-[32px] xl:leading-[38.4px]"
+          >
+            想看什麼主題由你決定<span class="hidden xl:inline-block">!</span>
+          </h2>
+          <h3
+            class="pb-9 text-xl font-bold leading-6 xl:pb-0 xl:text-2xl xl:leading-[28.8px]"
+          >
+            歡迎投稿與我們分享
+          </h3>
+        </div>
+        <a
+          href="#"
+          class="btn h-[44px] w-[109px] xl:mx-0 xl:ml-auto xl:h-14 xl:w-[134px] xl:text-xl xl:leading-6"
+          >聯絡我們</a
+        >
+      </div>
+    </section>
+    <footer class="border-t text-center xl:container">
+  <p
+    class="py-5 text-sm leading-[21px] text-[#6E6B67] xl:text-base xl:leading-6 xl:tracking-wider"
+  >
+    ©Vivre 2024 All right Reserved
+  </p>
+</footer>
+
+
+  </body>
+</html>

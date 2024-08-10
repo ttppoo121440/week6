@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="zh-hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>week6</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Serif+TC:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noto+Serif+TC:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <script type="module" crossorigin src="/week6/assets/main-SwwzvfPB.js"></script>
+    <link rel="stylesheet" crossorigin href="/week6/assets/main-DmT13ItR.css">
+  </head>
+  <style></style>
+
+  <body class="bg-[#FFFDF5] leading-normal">
+    <nav class="container px-3 xl:px-0">
+  <div class="flex items-center">
+    <div class="mr-auto flex items-center">
+      <a href="/week6/index.html">
+        <h1
+          class="mr-9 py-5 text-base leading-5 md:text-[28px] md:font-normal md:leading-7"
+        >
+          Vivre
+        </h1>
+      </a>
+      <div class="relative hidden lg:block">
+        <input
+          type="text"
+          placeholder="搜尋文章"
+          class="h-12 w-[276px] rounded-full border border-[#DEE2E6] py-3 pl-5 pr-10"
+        />
+        <span
+          class="material-symbols-outlined absolute right-3 top-1/4 text-primary"
+        >
+          search
+        </span>
+      </div>
+    </div>
+
+    <ul class="flex items-center md:py-9">
+      <li class="menu-item">
+        <a href="/week6/all-article.html" class="px-5 py-2">所有文章</a>
+      </li>
+      <li class="menu-item ml-5">
+        <a href="/week6/subscription.html" class="px-5 py-2">訂閱方案</a>
+      </li>
+      <li class="menu-item ml-5">
+        <a href="/week6/about.html" class="px-5 py-2">關於我們</a>
+      </li>
+      <li class="menu-item ml-5">
+        <a
+          href="/week6/register.html"
+          class="flex h-[52px] w-[137px] items-center justify-center rounded-full bg-primary leading-[19.2px] text-white hover:bg-primary-dark"
+          >登入/註冊</a
+        >
+      </li>
+      <li class="flex items-center md:hidden">
+        <button id="hamburger" class="mobile-menu-button p-3 outline-none">
+          <svg
+            class="h-6 w-6 text-gray-500 hover:text-gray-900"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </li>
+    </ul>
+  </div>
+  <div class="mobile-menu md:hidden">
+    <ul class="pb-10">
+      <li class="pb-6">
+        <div class="relative">
+          <input
+            type="text"
+            placeholder="搜尋文章"
+            class="h-12 w-full rounded-full border border-[#DEE2E6] py-3 pl-5 pr-10"
+          />
+          <span
+            class="material-symbols-outlined absolute right-3 top-1/4 text-primary"
+          >
+            search
+          </span>
+        </div>
+      </li>
+      <li class="pb-6">
+        <a
+          href="/week6/all-article.html"
+          class="block rounded-md px-3 py-2 text-base font-medium hover:bg-primary hover:text-white"
+          >所有文章</a
+        >
+      </li>
+      <li class="pb-6">
+        <a
+          href="/week6/subscription.html"
+          class="block rounded-md px-3 py-2 text-base font-medium hover:bg-primary hover:text-white"
+          >訂閱方案</a
+        >
+      </li>
+      <li>
+        <a
+          href="/week6/about.html"
+          class="block rounded-md px-3 py-2 text-base font-medium hover:bg-primary hover:text-white"
+          >關於我們</a
+        >
+      </li>
+    </ul>
+    <div class="pb-6">
+      <a
+        href="/week6/register.html"
+        class="flex h-[44px] w-full items-center justify-center rounded-full bg-primary text-white hover:bg-primary-dark"
+        >登入/註冊</a
+      >
+    </div>
+  </div>
+</nav>
+
+
+    <section class="container py-[60px] md:border-t md:py-[100px]">
+      <form
+        class="rounded-xl border bg-white p-6 md:mx-auto md:w-[636px] md:p-10"
+      >
+        <h4 class="pb-6 text-2xl leading-[28.8px] text-primary md:pb-10">
+          登入
+        </h4>
+        <div class="pb-4">
+          <label for="account" class="block pb-2 md:pb-3">會員帳號</label>
+          <input
+            type="text"
+            name="account"
+            id="account"
+            placeholder="請輸入會員帳號"
+            class="w-full bg-[#F8F9FA] px-4 py-3 leading-6 tracking-wider"
+          />
+        </div>
+        <div class="pb-4">
+          <label for="password" class="block pb-2 md:pb-3">密碼</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="請輸入密碼"
+            class="w-full bg-[#F8F9FA] px-4 py-3 leading-6 tracking-wider"
+          />
+        </div>
+        <div class="pb-6 md:pb-10">
+          <button
+            type="button"
+            class="hover:bg-primary-dark flex h-[44px] w-full items-center justify-center rounded-full bg-primary text-white"
+          >
+            立即登入
+            <span class="material-symbols-outlined pl-3"> trending_flat </span>
+          </button>
+        </div>
+        <div class="flex items-center justify-center pb-6 md:pb-10">
+          <div class="w-full flex-1 border-t"></div>
+          <span class="mx-3 w-auto tracking-wider text-[#ADB5BD]"
+            >或以其他方式登入</span
+          >
+          <div class="w-full flex-1 border-t"></div>
+        </div>
+        <div>
+          <div class="flex justify-center pb-2">
+            <a
+              href="#"
+              class="flex w-full justify-center rounded-full bg-[#F8F9FA] py-3 leading-[19.2px]"
+            >
+              <img
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/icons-google.png?raw=true"
+                alt="google"
+                class="pr-3"
+              />使用 Google 登入</a
+            >
+          </div>
+          <div class="flex justify-center pb-6 md:pb-10">
+            <a
+              href="#"
+              class="flex w-full justify-center rounded-full bg-[#F8F9FA] py-3 leading-[19.2px]"
+            >
+              <img
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/icons-facebook.png?raw=true"
+                alt="google"
+                class="pr-3"
+              />使用 Facebook 登入</a
+            >
+          </div>
+          <div class="pr-3 text-center leading-6 tracking-wider">
+            已經是會員了？<span
+              ><a
+                href="/week6/register.html"
+                class="hover:text-primary-dark tracking-wider text-primary"
+                >點此註冊</a
+              ></span
+            >
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <footer class="border-t text-center xl:container">
+  <p
+    class="py-5 text-sm leading-[21px] text-[#6E6B67] xl:text-base xl:leading-6 xl:tracking-wider"
+  >
+    ©Vivre 2024 All right Reserved
+  </p>
+</footer>
+
+
+  </body>
+</html>
