@@ -41,8 +41,8 @@ class Carousel {
   }
 
   private setupCarousel() {
-    const prevButton = this.container.querySelector(".prev");
-    const nextButton = this.container.querySelector(".next");
+    const prevButton = document.querySelector(".prev");
+    const nextButton = document.querySelector(".next");
     if (prevButton && nextButton) {
       prevButton.addEventListener("click", () => this.move(-1));
       nextButton.addEventListener("click", () => this.move(1));
