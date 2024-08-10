@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="zh-hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>week6</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Serif+TC:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noto+Serif+TC:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <style></style>
+
+  <body class="bg-[#FFFDF5] leading-normal">
+    <%- include('./src/layout/Navbar.ejs') %>
+
+    <section
+      class="h-[240px] bg-article-banner-sm bg-cover bg-center md:container sm:h-[454px] md:bg-article-banner"
+    ></section>
+
+    <section
+      class="container px-3 pb-[60px] pt-10 md:pt-20 xl:px-0 xl:pb-[100px]"
+    >
+      <div class="lg:mx-auto lg:w-[53.5rem]">
+        <ul class="flex py-3 xl:pb-5 xl:pt-0">
+          <li class="mr-2">
+            <a
+              href="<%= base %>index.html"
+              class="block tracking-wider xl:leading-6"
+              >首頁</a
+            >
+          </li>
+          <li class="mr-2">/</li>
+          <li class="mr-2">
+            <a
+              href="<%= base %>all-article.html"
+              class="block tracking-wider xl:leading-6"
+              >所有文章</a
+            >
+          </li>
+          <li class="mr-2">/</li>
+          <li>
+            <a href="#" class="block tracking-wider text-primary xl:leading-6"
+              >私人島嶼的露營奇遇記</a
+            >
+          </li>
+        </ul>
+        <h2
+          class="text-2xl leading-[28.8px] xl:pb-4 xl:text-[40px] xl:leading-[48px]"
+        >
+          私人島嶼的露營奇遇記
+        </h2>
+        <time datetime="2024 / 5 / 1"
+          ><span class="block leading-6 text-[#ADB5BD] xl:leading-[19.6px]"
+            >2024 / 5 / 1</span
+          ></time
+        >
+        <article class="fade-out pt-7">
+          <p class="pb-6 leading-6 tracking-wider xl:pb-10">
+            嗨！我是秘境尋蹤小編
+            Elly，很高興能與你分享我這段令人心曠神怡的旅程。這不僅僅是一次旅行，更是一場對自然、對內心的深度體悟，一次重新與大自然連結的奇妙旅程。希望透過我的分享，你也能感受到這份自然之美，並找到一份屬於自己的心靈寧靜。
+          </p>
+          <p class="pb-6 leading-6 tracking-wider xl:pb-10">
+            這段旅程的開始，是從一個遙遠的小島。我對於這片土地的認識，僅止於一些遊記和照片，對於它的神秘感與未知感讓我充滿了好奇。一艘小船，帶著我穿越海浪，穿過風暴，終於抵達了這片被大自然雕琢的寶地。當我踏上這片島嶼的那一刻，心中充滿了震撼與喜悅。
+          </p>
+          <img
+            src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/content-1-sm.png?raw=true"
+            alt="article-img"
+            class="w-full pb-6 xl:h-[390px] xl:pb-10"
+          />
+        </article>
+        <div class="mx-auto flex flex-col">
+          <div class="xl:flex xl:justify-center xl:pb-4">
+            <h6 class="pb-1 text-center leading-[19.2px] xl:pb-0">
+              本篇為會員專屬文章 <span>，</span>
+            </h6>
+            <h6 class="pb-3 text-center leading-[19.2px] xl:pb-0">
+              馬上訂閱瀏覽所有內容！
+            </h6>
+          </div>
+          <div class="flex justify-center">
+            <a
+              href="<%= base %>subscription.html"
+              class="btn h-[44px] w-[141px] leading-[19.2px] xl:h-14 xl:w-[170px] xl:text-xl xl:leading-6"
+              >我要訂閱<span class="material-symbols-outlined pl-3">
+                trending_flat
+              </span></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="container px-3 pb-[60px] lg:w-[53.5rem] xl:px-0 xl:pb-[100px]"
+    >
+      <h3
+        class="xl: pb-5 text-2xl leading-[28.8px] tracking-wider xl:pb-10 xl:text-[32px] xl:leading-[38.4px]"
+      >
+        延伸閱讀
+      </h3>
+      <div class="carousel">
+        <ul class="carousel-items xl:block">
+          <li class="carousel-item xl:pb-10">
+            <div class="border-b pb-4 xl:flex">
+              <img
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/read-1-sm.png?raw=true"
+                alt="articles"
+                class="w-full pb-6 md:hidden"
+              />
+              <img
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/read-1-sm.png?raw=true"
+                alt="articles"
+                class="mr-6 hidden w-full pb-6 md:block xl:h-[147px] xl:w-[196px] xl:pb-0"
+              />
+              <div>
+                <a href="#">
+                  <h5 class="pb-2 text-xl font-black leading-6">
+                    週末說走就走露營記
+                  </h5>
+                </a>
+                <p
+                  class="pb-3 font-semibold leading-6 tracking-wider text-[#6C757D]"
+                >
+                  遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜...
+                </p>
+                <a href="#" class="read-more-btn">Read More</a>
+              </div>
+            </div>
+          </li>
+          <li class="carousel-item xl:pb-10">
+            <div class="border-b pb-4 xl:flex">
+              <img
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/read-2-sm.png?raw=true"
+                alt="articles"
+                class="w-full pb-6 md:hidden"
+              />
+              <img
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/read-2.png?raw=true"
+                alt="articles"
+                class="mr-6 hidden w-full pb-6 md:block xl:h-[147px] xl:w-[196px] xl:pb-0"
+              />
+              <div>
+                <a href="#">
+                  <h5 class="pb-2 text-xl font-black leading-6">
+                    城市野營日記
+                  </h5>
+                </a>
+                <p
+                  class="pb-3 font-semibold leading-6 tracking-wider text-[#6C757D]"
+                >
+                  終於!我實現了一個看似瘋狂的想法—在熟悉的城市裡野營一晚。說實話,一開始我也有點懷疑自己,畢竟眾目睽睽之下搭帳篷實在有點怪異。不過漸漸地,這股初時的侷促不...
+                </p>
+                <a href="#" class="read-more-btn">Read More</a>
+              </div>
+            </div>
+          </li>
+          <li class="carousel-item">
+            <div class="border-b pb-4 xl:flex">
+              <img
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/read-3-sm.png?raw=true"
+                alt="articles"
+                class="w-full pb-6 md:hidden"
+              />
+              <img
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/read-3.png?raw=true"
+                alt="articles"
+                class="mr-6 hidden w-full pb-6 md:block xl:h-[147px] xl:w-[196px] xl:pb-0"
+              />
+              <div>
+                <a href="#">
+                  <h5 class="pb-2 text-xl font-black leading-6">
+                    和寵物去露營 - 大自然之旅的雙倍體驗
+                  </h5>
+                </a>
+                <p
+                  class="pb-3 font-semibold leading-6 tracking-wider text-[#6C757D]"
+                >
+                  說實話,一開始我有點擔心帶著我的狗狗露營會不會太麻煩。畢竟要照顧牠的飲食起居,還得注意牠的安全。不過這次經驗讓我徹底改觀了!出發前,我特意為狗狗準備了適當...
+                </p>
+                <a href="#" class="read-more-btn">Read More</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <%- include('./src/layout/Footer.ejs') %>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
