@@ -1,6 +1,7 @@
 import "./assets/styles/tailwind.css";
 import Carousel from "./components/Carousel";
 import "./components/MobileMenu";
+import "./components/Tabs";
 
 document.addEventListener("DOMContentLoaded", () => {
   const carouselContainers = document.querySelectorAll(".carousel");
